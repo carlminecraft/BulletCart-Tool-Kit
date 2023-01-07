@@ -1,0 +1,56 @@
+Initialization commands
+/scoreboard objectives add bulletcartew dummy
+/scoreboard objectives add bulletcartns dummy
+/scoreboard objectives add bulletcartspeed dummy
+/reload
+
+Beginning of the BulletCart route (eastward)
+execute @e[type=minecart,r=5,c=1] ~ ~ ~ function ftmc:bulletcart/control/east
+
+Entering the signal block (with given signal ID, in order to prevent target selector collision)
+scoreboard players tag @e[type=minecart,tag=bulletcart,r=5,c=1] add bcsignal_lineid_xx_yy_001
+* Note: xx is the departure station, and yy is the destination (next station).
+
+Controlling the speed (should be >= 18)
+scoreboard players set @e[type=minecart,tag=bcsignal_lineid_xx_yy_001,r=20,c=1] bulletcartspeed 216
+
+Exiting the signal block (with given signal ID)
+scoreboard players tag @e[type=minecart,tag=bulletcart,r=5,c=1] remove bcsignal_lineid_xx_yy_001
+
+End of the BulletCart route
+execute @e[type=minecart,tag=bulletcart,r=5,c=1] ~ ~ ~ function ftmc:bulletcart/control/off
+
+
+
+[Currently available signal tag names]
+
+bcsignal_h2x_fh_gt_001 (east)
+bcsignal_h2x_gt_fh_001 (west)
+
+bcsignal_h2x_rm_fh_001 (east)
+bcsignal_h2x_fh_rm_001 (west)
+
+bcsignal_x1_op_sgt_001 (east)
+bcsignal_x1_sgt_op_001 (west)
+
+bcsignal_x1_sgt_gt_001(S), bcsignal_x1_sgt_gt_002(E) (east)
+bcsignal_x1_gt_sgt_001(W), bcsignal_x1_gt_sgt_002(N) (west)
+
+bcsignal_x1_gb_sc_001 (east)
+bcsignal_x1_sc_gb_001 (west)
+
+bcsignal_museum3_e_001 (east)
+bcsignal_museum3_w_001 (west)
+
+
+
+[Example(s) of speed modification]
+
+scoreboard players set @e[type=minecart,tag=bcsignal_h2x_gt_fh_001,r=20,c=1] bulletcartspeed 72
+
+
+
+[Notes: Old Express Cart DisplayName Switches]
+
+entitydata @e[type=minecart,r=3,c=1] {CustomNameVisible:0}
+entitydata @e[type=minecart,r=3,c=1] {CustomNameVisible:1}
