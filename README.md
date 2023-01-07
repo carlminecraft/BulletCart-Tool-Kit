@@ -41,31 +41,31 @@ execute @e[type=minecart,tag=bulletcart,r=5,c=1] ~ ~ ~ function mtr:bulletcart/c
 
 [Currently available signal tag names]
 
-line8s_spawn_metrostone_001 (south)
+line8s_spawn_metrostone_001 (south),
 line8n_spawn_metrostone_001 (north)
 
-line3i_spawn_metrostone_001 (south)
+line3i_spawn_metrostone_001 (south),
 line3o_spawn_metrostone_001 (north)
 
-line8e_haleyjunction_jinnyjunction_001 (east)
+line8e_haleyjunction_jinnyjunction_001 (east),
 line8w_haleyjunction_jinnyjunction_001 (west)
 
-line3o_metrostone_wholehouse_001 (south)
+line3o_metrostone_wholehouse_001 (south),
 line3i_metrostone_wholehouse_001 (north)
 
-line3o_metrospring_spawn_001 (south)
+line3o_metrospring_spawn_001 (south),
 line3i_metrospring_spawn_001 (north)
 
-line3o_metrospring_shekpaitau_001 (south)
+line3o_metrospring_shekpaitau_001 (south),
 line3i_metrospring_shekpaitau_001 (north)
 
-line7n_origin_metrospring_001 (north)
+line7n_origin_metrospring_001 (north),
 line7s_origin_metrospring_001 (south)
 
-linex3s_spawn_shekpaitsu_001 (south)
+linex3s_spawn_shekpaitsu_001 (south),
 linex3n_spawn_shekpaitsu_001 (north)
 
-line7n_taplow_metrospring (north)
+line7n_taplow_metrospring (north),
 line7s_taplow_metrospring (south)
 
 
