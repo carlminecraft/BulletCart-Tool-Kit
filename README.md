@@ -6,7 +6,7 @@ https://github.com/flashteens/FTMCRailBuilder
 
 How to install:
 
-1. Copy the "mtr" folder into [<your world folder>\data\functions]
+1. Copy the "mtr" folder into <your world folder>\data\functions
 
 2. Copy the following command to main.mcfunction(Located at <your world folder>\data\functions\ftmc\subwayengine):
 function ftmc:bulletcart/bulletcart_engine
@@ -73,7 +73,7 @@ line7s_taplow_metrospring (south)
 
 [Example(s) of speed modification]
 
-scoreboard players set @e[type=minecart,tag=line7n_origin_metrospring_001,r=20,c=1] bulletcartspeed 72
+scoreboard players set @e[type=minecart,tag=line7s_taplow_metrospring,r=20,c=1] bulletcartspeed 18
 
 
 
