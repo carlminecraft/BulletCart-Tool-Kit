@@ -7,5 +7,8 @@ execute @e[type=minecart,tag=bulletcart,score_bulletcartns=-1] ~ ~ ~ function mt
 #execute @e[type=minecart,tag=bulletcart] ~ ~ ~ detect ~ ~-1 ~ air 0 function mtr:bulletcart/control/off
 
 #sensor command
-#execute @e[type=minecart,tag=bulletcart] ~ ~ ~ function mtr:bulletcart/engine/sensor/main
+execute @e[type=minecart,tag=bulletcart] ~ ~ ~ function mtr:bulletcart/engine/sensor/main
+
+#others things that not bulletcart's thing.
+function mtr:system/main
 
