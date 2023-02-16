@@ -29,7 +29,7 @@ scoreboard players tag @e[type=minecart,tag=bulletcart,r=5,c=1] add lineid_xx_yy
 Note: lineid,xx and yy can be changed to the signal tag names listed below (example: line8s_jinnyjunction_haleyjunction_001).
 
 * Controlling the speed (should be at least 18)
-scoreboard players set @e[type=minecart,tag=bcsignal_lineid_xx_yy_001,r=20,c=1] bulletcartspeed 216
+scoreboard players set @e[type=minecart,r=20,c=1] bulletcartspeed 18
 
 * Exiting the signal block (with given signal ID)
 scoreboard players tag @e[type=minecart,tag=bulletcart,r=5,c=1] remove bcsignal_lineid_xx_yy_001
